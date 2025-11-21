@@ -1,0 +1,33 @@
+body {
+    background-color: rgb(49,49,49);
+    overflow: hidden;
+}
+
+#buttons {
+    display: flex;
+    position: absolute;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, -0%);
+    justify-content: center;
+    gap: 10px;
+}
+
+#button {
+    background-color: transparent;
+    border: none;
+}
+
+#img {
+    border-radius: 10%;
+    border: 5px solid transparent;
+}
+
+#img:hover {
+    border-color: rgb(225,225,225);
+    cursor: pointer;
+}
