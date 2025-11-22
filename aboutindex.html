@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function CreateWindow(url) {
+            var win = window.open();
+            win.document.body.style.margin = '0';
+            win.document.body.style.height = '100vh';
+            var iframe = win.document.createElement('iframe');
+            iframe.style.border = 'none';
+            iframe.style.width = '100%';
+            iframe.style.height = '100%';
+            iframe.style.margin = '0';
+            iframe.src = url;
+            win.document.body.appendChild(iframe);
+        }
+    </script>
+</head>
+<body>
+    <div id="buttons">
+        <button id="button" onclick="CreateWindow('Games/Deltarune.html')"><img src="Thumbnails/deltarune.webp" id="img"></button>
+        <button id="button" onclick="CreateWindow('Games/BaldisBasics/index.html')"><img src="Thumbnails/BaldisBasics.png" id="img"></button>
+        <button id="button" onclick="CreateWindow('Games/Ultrakill.html')"><img src="Thumbnails/Ultrakill.jpg" id="img"></button>
+        <button id="button" onclick="CreateWindow('Games/CrossyRoad.html')"><img src="Thumbnails/CrossyRoad.jpeg" id="img" style="width: 100px; height: 100px;"></button>
+        <button id="button" onclick="CreateWindow('Games/1v1lol.html')"><img src="Thumbnails/1v1lol.jpg" id="img" style="width: 100px; height: 100px;"></button>
+    </div>
+</body>
+</html>
